@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exam : MonoBehaviour {
+public class Exam : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        transform.Translate(Vector3.left * 50 * Time.deltaTime);  // 50의 속도로 기차 이동 
+    }
+
 }
